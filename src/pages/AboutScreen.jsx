@@ -54,16 +54,6 @@ export default function AboutScreen() {
           </ul>
         </section>
 
-        <section className="about-screen__section">
-          <h3>KOICA WeKO</h3>
-          <p>
-            WeKO는 KOICA(한국국제협력단)가 운영하는 청년 서포터즈 활동으로,
-            대학생과 청년들이 국제개발협력에 대한 이해를 넓히고 이를
-            콘텐츠로 알리는 활동을 해요. 이 웹사이트는 WeKO 8기 지원을
-            위해 제작한 포트폴리오 콘텐츠예요.
-          </p>
-        </section>
-
         <button className="btn-primary about-screen__cta" onClick={() => navigate("/")}>
           씨앗 심으러 가기
         </button>
