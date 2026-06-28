@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { useNavigate, useParams } from "react-router-dom";
+import { toPng } from "html-to-image";
 import { getSeedById, CORE_MESSAGE } from "../data/seeds";
 import { getStoryBySeed } from "../data/stories";
 import { useJourney } from "../context/JourneyContext";
@@ -10,7 +11,8 @@ export default function ResultScreen() {
   const { seedId } = useParams();
   const navigate = useNavigate();
   const { pathKey, reset } = useJourney();
-  const [copied, setCopied] = useState(false);
+  const [shareState, setShareState] = useState("idle"); // idle | loading | copied | error
+  const cardRef = useRef(null);
 
   const seed = getSeedById(seedId);
   const story = getStoryBySeed(seedId);
@@ -23,22 +25,36 @@ export default function ResultScreen() {
 
   const shareText = `나는 ${seed.name}이었어. 너는 어떤 씨앗일까? 🌱\n씨앗 하나가 마을을 바꾸는 마법 →`;
 
+  // 결과 카드를 실제 이미지로 캡처해서, 모바일은 이미지 공유 시트로, 데스크탑은 다운로드로 전달
   const handleShare = async () => {
-    const shareData = {
-      title: "씨앗 하나가 마을을 바꾸는 마법",
-      text: shareText,
-      url: window.location.origin,
-    };
-    if (navigator.share) {
-      try {
-        await navigator.share(shareData);
-      } catch {
-        // 사용자가 공유를 취소한 경우 등 — 별도 처리 불필요
+    if (!cardRef.current) return;
+    setShareState("loading");
+    try {
+      const dataUrl = await toPng(cardRef.current, {
+        pixelRatio: 2,
+        backgroundColor: seed.theme.dark,
+      });
+      const blob = await (await fetch(dataUrl)).blob();
+      const file = new File([blob], "my-seed.png", { type: "image/png" });
+
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({
+          title: "씨앗 하나가 마을을 바꾸는 마법",
+          text: shareText,
+          files: [file],
+        });
+        setShareState("idle");
+      } else {
+        const link = document.createElement("a");
+        link.href = dataUrl;
+        link.download = "my-seed-result.png";
+        link.click();
+        setShareState("copied");
+        setTimeout(() => setShareState("idle"), 2500);
       }
-    } else {
-      await navigator.clipboard.writeText(`${shareText} ${shareData.url}`);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      setShareState("error");
+      setTimeout(() => setShareState("idle"), 2500);
     }
   };
 
@@ -47,10 +63,18 @@ export default function ResultScreen() {
     navigate("/interest");
   };
 
+  const shareLabel = {
+    idle: "결과 카드 저장하기",
+    loading: "이미지 만드는 중...",
+    copied: "저장 완료! 친구에게 보내보세요",
+    error: "저장에 실패했어요, 다시 시도해주세요",
+  }[shareState];
+
   return (
     <div className="screen result-screen" style={{ background: seed.theme.gradient }}>
       <div className="screen-content result-screen__content">
         <motion.div
+          ref={cardRef}
           className="result-screen__card"
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -64,6 +88,10 @@ export default function ResultScreen() {
           <p className="result-screen__ending-title">{seed.endingTitle}</p>
 
           <p className="result-screen__personal-line">{personalLine}</p>
+
+          <div className="result-screen__watermark">
+            🫘 씨앗 하나가 마을을 바꾸는 마법
+          </div>
         </motion.div>
 
         {/* 모든 씨앗 공통, 변하지 않는 핵심 메시지 */}
@@ -82,8 +110,12 @@ export default function ResultScreen() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
         >
-          <button className="btn-primary result-screen__share" onClick={handleShare}>
-            {copied ? "복사 완료! 친구에게 보내보세요" : "결과 공유하기"}
+          <button
+            className="btn-primary result-screen__share"
+            onClick={handleShare}
+            disabled={shareState === "loading"}
+          >
+            {shareLabel}
           </button>
           <button className="btn-ghost result-screen__restart" onClick={handleRestart}>
             다른 씨앗도 보러가기
