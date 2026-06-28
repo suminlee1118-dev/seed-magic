@@ -13,6 +13,7 @@ export const SEEDS = [
     description:
       "가뭄과 흉작 앞에서도 땅을 포기하지 않는 마음. 작은 농경지를 살리는 기술 하나가 한 마을의 식탁을 통째로 바꿀 수 있어요.",
     relatedMajors: ["농업경제학", "식품영양학", "축산학", "농촌사회학", "원예학"],
+    grownEmoji: "🌾",
     theme: {
       base: "#5B7B3F",
       light: "#E7EFDC",
@@ -31,6 +32,7 @@ export const SEEDS = [
     description:
       "작은 보건소 하나, 한 명의 보건요원이 한 마을 아이들의 생존율을 바꿉니다. 돌봄은 가장 직접적인 변화의 시작이에요.",
     relatedMajors: ["간호학", "보건행정학", "의학", "공공보건학", "임상병리학"],
+    grownEmoji: "🌷",
     theme: {
       base: "#C9505C",
       light: "#FBE5E7",
@@ -49,6 +51,7 @@ export const SEEDS = [
     description:
       "줄어드는 숲과 더러워지는 물 앞에서, 다음 세대의 공기를 먼저 생각하는 마음. 환경을 지키는 일은 곧 사람을 지키는 일이에요.",
     relatedMajors: ["환경공학", "지리학", "에너지공학", "생태학", "산림자원학"],
+    grownEmoji: "🌳",
     theme: {
       base: "#2E8B7E",
       light: "#DDF0EC",
@@ -67,6 +70,7 @@ export const SEEDS = [
     description:
       "종이 더미 속에 묻혀 있던 기록 하나. 기술은 오래 걸리던 일을 순식간에 끝내는 가장 확실한 도구가 될 수 있어요.",
     relatedMajors: ["컴퓨터공학", "산업공학", "데이터과학", "디자인", "전자공학"],
+    grownEmoji: "🌻",
     theme: {
       base: "#3D6FB4",
       light: "#E1EBF8",
@@ -85,6 +89,7 @@ export const SEEDS = [
     description:
       "멀어서 닿지 못했던 교실 하나. 배움의 기회가 한 사람에게 닿으면, 그 사람이 다시 마을의 다음 세대를 가르치게 돼요.",
     relatedMajors: ["교육학", "아동학", "사회복지학", "심리학", "초등교육학"],
+    grownEmoji: "🌲",
     theme: {
       base: "#D98E3B",
       light: "#FBEFDC",
