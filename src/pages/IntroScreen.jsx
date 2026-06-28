@@ -28,7 +28,7 @@ export default function IntroScreen() {
         >
           KOICA WeKO 8기 지원작
           <br />
-          기획 · 제작 : 이수민 (농업경제학)
+          기획 · 제작 : 이수민 (농업경제학 전공)
         </motion.p>
 
         <motion.h1
