@@ -46,6 +46,7 @@
 
 .oda-screen__meta {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 14px;
 }
