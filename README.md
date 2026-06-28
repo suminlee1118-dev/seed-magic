@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/29434608/README.md)
+[README (1).md](https://github.com/user-attachments/files/29434723/README.1.md)
 # 🌱 씨앗 하나가 마을을 바꾸는 마법
 
 > KOICA WeKO 8기 서포터즈 지원 포트폴리오 콘텐츠
@@ -8,7 +8,8 @@
 이야기의 끝에는 실제 KOICA ODA 사업과의 연결, 그리고 하나의 메시지가 기다립니다.
 
 > "ODA는 국제학과만의 것이 아닙니다.
-> 당신의 전공과 관심사가 누군가의 마을을 바꾸는 씨앗이 될 수 있습니다."
+> 농업, 교육, 환경, 기술, 보건 등 다양한 분야의 사람들이 함께 만드는 변화입니다.
+> 당신의 전공과 관심사도 누군가의 마을을 바꾸는 씨앗이 될 수 있습니다."
 
 ## 기획 의도
 
