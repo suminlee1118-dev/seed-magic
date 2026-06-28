@@ -26,7 +26,9 @@ export default function IntroScreen() {
           animate={{ opacity: 0.8 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          KOICA WeKO 8기 서포터즈 기획 · 이수민 (농업경제학 전공)
+          KOICA WeKO 8기 지원작
+          <br />
+          기획 · 제작 : 이수민 (농업경제학)
         </motion.p>
 
         <motion.h1
