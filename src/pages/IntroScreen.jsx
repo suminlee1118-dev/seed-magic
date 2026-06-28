@@ -16,7 +16,7 @@ export default function IntroScreen() {
         animate={{ scale: 1, opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
       >
-        🌰
+        🫘
       </motion.div>
 
       <div className="screen-content intro-screen__content">
