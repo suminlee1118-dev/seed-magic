@@ -68,7 +68,7 @@ export default function ResultScreen() {
           <p className="result-screen__personal-line">{personalLine}</p>
 
           <div className="result-screen__watermark">
-            🫘 씨앗 하나가 마을을 바꾸는 마법
+            🫘 씨앗 하나가 마을을 바꾸는 마법 · 이수민 (농업경제학 전공)
           </div>
         </motion.div>
 
