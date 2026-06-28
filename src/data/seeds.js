@@ -65,7 +65,7 @@ export const SEEDS = [
     interestPrompt: "기술과 혁신이 궁금해요",
     revealLine: "당신의 관심사는… 기술의 씨앗이었네요.",
     description:
-      "끊겨 있던 정보와 사람을 잇는 작은 회선 하나. 기술은 마을을 세상과 연결하는 가장 빠른 다리가 될 수 있어요.",
+      "종이 더미 속에 묻혀 있던 기록 하나. 기술은 오래 걸리던 일을 순식간에 끝내는 가장 확실한 도구가 될 수 있어요.",
     relatedMajors: ["컴퓨터공학", "산업공학", "데이터과학", "디자인", "전자공학"],
     theme: {
       base: "#3D6FB4",
@@ -73,7 +73,7 @@ export const SEEDS = [
       dark: "#234373",
       gradient: "linear-gradient(160deg, #1E3A63 0%, #3D6FB4 55%, #7FAEE3 100%)",
     },
-    endingTitle: "마을을 세상과 연결했어요",
+    endingTitle: "마을의 기다림을 줄였어요",
   },
   {
     id: "education",
