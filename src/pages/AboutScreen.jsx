@@ -54,6 +54,10 @@ export default function AboutScreen() {
           </ul>
         </section>
 
+        <section className="about-screen__section about-screen__credit">
+          <p>제작자: 이수민 (농업경제학 전공)</p>
+        </section>
+
         <button className="btn-primary about-screen__cta" onClick={() => navigate("/")}>
           씨앗 심으러 가기
         </button>
