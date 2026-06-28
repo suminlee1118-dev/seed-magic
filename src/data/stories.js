@@ -191,7 +191,7 @@ export const STORIES = {
     },
     step3: {
       search: {
-        text: "주민들이 직접 자기 서류를 검색해 찾아내며, 더는 누구를 거치지 않아도 돼요.",
+        text: "주민들이 직접 자기 서류를 찾아내며, 누군가를 거칠 필요가 없어졌어요.",
         situation: "이 변화를 계속 이어가려면?",
         choices: [
           { id: "A", label: "이웃 마을에도 이 방식을 전해요", next: "end" },
