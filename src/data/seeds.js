@@ -32,7 +32,7 @@ export const SEEDS = [
     description:
       "작은 보건소 하나, 한 명의 보건요원이 한 마을 아이들의 생존율을 바꿉니다. 돌봄은 가장 직접적인 변화의 시작이에요.",
     relatedMajors: ["간호학", "보건행정학", "의학", "공공보건학", "임상병리학"],
-    grownEmoji: "🌷",
+    grownEmoji: "🏥",
     theme: {
       base: "#C9505C",
       light: "#FBE5E7",
@@ -62,7 +62,7 @@ export const SEEDS = [
   },
   {
     id: "technology",
-    emoji: "💻",
+    emoji: "💡",
     name: "기술의 씨앗",
     tagline: "연결과 효율을 만드는 마음",
     interestPrompt: "기술과 혁신이 궁금해요",
@@ -70,7 +70,7 @@ export const SEEDS = [
     description:
       "종이 더미 속에 묻혀 있던 기록 하나. 기술은 오래 걸리던 일을 순식간에 끝내는 가장 확실한 도구가 될 수 있어요.",
     relatedMajors: ["컴퓨터공학", "산업공학", "데이터과학", "디자인", "전자공학"],
-    grownEmoji: "🌻",
+    grownEmoji: "💻",
     theme: {
       base: "#3D6FB4",
       light: "#E1EBF8",
@@ -89,7 +89,7 @@ export const SEEDS = [
     description:
       "멀어서 닿지 못했던 교실 하나. 배움의 기회가 한 사람에게 닿으면, 그 사람이 다시 마을의 다음 세대를 가르치게 돼요.",
     relatedMajors: ["교육학", "아동학", "사회복지학", "심리학", "초등교육학"],
-    grownEmoji: "🌲",
+    grownEmoji: "🎓",
     theme: {
       base: "#D98E3B",
       light: "#FBEFDC",
