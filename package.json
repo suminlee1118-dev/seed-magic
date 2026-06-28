@@ -1,0 +1,26 @@
+{
+  "name": "seed-magic",
+  "description": "씨앗 하나가 마을을 바꾸는 마법 - KOICA WeKO 8기 서포터즈 인터랙티브 ODA 콘텐츠",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer-motion": "^12.42.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "oxlint": "^1.69.0",
+    "vite": "^8.1.0"
+  }
+}

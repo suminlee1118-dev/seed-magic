@@ -1,0 +1,80 @@
+.result-screen {
+  color: var(--color-surface);
+}
+
+.result-screen__content {
+  justify-content: center;
+  gap: 16px;
+}
+
+.result-screen__card {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border-radius: var(--radius-card);
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+}
+
+.result-screen__emoji {
+  font-size: 44px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.result-screen__eyebrow {
+  font-size: 13px;
+  color: var(--color-ink-soft);
+  font-weight: 600;
+}
+
+.result-screen__seed-name {
+  font-size: 24px;
+  margin: 4px 0 6px;
+}
+
+.result-screen__ending-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-ink-soft);
+  margin-bottom: 18px;
+}
+
+.result-screen__personal-line {
+  font-size: 14.5px;
+  line-height: 1.7;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-paper-line);
+}
+
+.result-screen__core-message {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 20px;
+  padding: 18px 20px;
+  backdrop-filter: blur(6px);
+}
+
+.result-screen__core-message p {
+  font-size: 14px;
+  line-height: 1.75;
+  font-weight: 600;
+  text-align: center;
+}
+
+.result-screen__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.result-screen__share {
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+
+.result-screen__restart {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--color-surface);
+}

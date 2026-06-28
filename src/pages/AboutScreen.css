@@ -1,0 +1,57 @@
+.about-screen {
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+
+.about-screen__content {
+  justify-content: flex-start;
+  padding-top: 24px;
+  gap: 22px;
+}
+
+.about-screen__back {
+  align-self: flex-start;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-ink-soft);
+  padding: 8px 0;
+}
+
+.about-screen__title {
+  font-size: 24px;
+}
+
+.about-screen__section h3 {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.about-screen__section p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--color-ink-soft);
+}
+
+.about-screen__seed-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about-screen__seed-list li {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--color-ink-soft);
+  background: var(--color-surface-dim);
+  padding: 10px 14px;
+  border-radius: 14px;
+}
+
+.about-screen__cta {
+  margin-top: 8px;
+}

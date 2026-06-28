@@ -1,0 +1,8 @@
+.story-screen {
+  position: relative;
+}
+
+.story-screen__content {
+  justify-content: center;
+  padding-top: 72px;
+}

@@ -1,0 +1,80 @@
+.oda-screen {
+  color: var(--color-surface);
+}
+
+.oda-screen__content {
+  justify-content: flex-start;
+  padding-top: 64px;
+  gap: 4px;
+}
+
+.oda-screen__eyebrow {
+  text-align: center;
+}
+
+.oda-screen__title {
+  font-size: 22px;
+  text-align: center;
+  margin: 8px 0 24px;
+}
+
+.oda-screen__card {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border-radius: var(--radius-card);
+  padding: 24px 20px;
+  box-shadow: var(--shadow-card);
+}
+
+.oda-screen__badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--color-ink-soft);
+  background: var(--color-surface-dim);
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 12px;
+}
+
+.oda-screen__case-title {
+  font-size: 18px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.oda-screen__meta {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.oda-screen__meta-tag {
+  background: var(--color-surface-dim);
+  color: var(--color-ink);
+  font-size: 12.5px;
+}
+
+.oda-screen__summary {
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--color-ink-soft);
+}
+
+.oda-screen__source {
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--color-ink-soft);
+  padding-top: 14px;
+  border-top: 1px solid var(--color-paper-line);
+}
+
+.oda-screen__source a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.oda-screen__cta {
+  margin-top: 26px;
+}

@@ -1,0 +1,66 @@
+.intro-screen {
+  background: var(--color-bg);
+  color: var(--color-surface);
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-screen__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 18%, rgba(143, 174, 99, 0.28), transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 85%, rgba(217, 142, 59, 0.18), transparent 60%);
+  z-index: 0;
+}
+
+.intro-screen__seed {
+  font-size: 64px;
+  margin-top: 8vh;
+  z-index: 1;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.45));
+}
+
+.intro-screen__content {
+  z-index: 1;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+  justify-content: flex-start;
+  padding-top: 24px;
+}
+
+.intro-screen__eyebrow {
+  color: #d9cfb8;
+}
+
+.intro-screen__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-surface);
+  letter-spacing: -0.01em;
+}
+
+.intro-screen__subtitle {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #cfc6b4;
+}
+
+.intro-screen__subtitle span {
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+.intro-screen__cta {
+  margin-top: 18px;
+}
+
+.intro-screen__about-link {
+  margin-top: 4px;
+  font-size: 13px;
+  text-decoration: underline;
+  text-decoration-color: rgba(251, 247, 240, 0.4);
+  color: #e7dfcd;
+  padding: 8px;
+}

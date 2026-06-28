@@ -1,0 +1,83 @@
+.reveal-screen {
+  color: var(--color-surface);
+}
+
+.reveal-screen__content {
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  justify-content: flex-start;
+  padding-top: 56px;
+}
+
+.reveal-screen__seed-wrap {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  margin-bottom: 18px;
+}
+
+.reveal-screen__emoji {
+  font-size: 46px;
+}
+
+.reveal-screen__line {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.reveal-screen__name {
+  font-size: 28px;
+  margin: 6px 0 8px;
+}
+
+.reveal-screen__tagline {
+  font-size: 15px;
+  opacity: 0.92;
+  margin-bottom: 26px;
+}
+
+.reveal-screen__major-box {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-card);
+  padding: 20px 18px;
+  backdrop-filter: blur(6px);
+}
+
+.reveal-screen__major-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+}
+
+.reveal-screen__major-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.reveal-screen__major-tag {
+  background: rgba(255, 255, 255, 0.22);
+  font-size: 13px;
+}
+
+.reveal-screen__major-note {
+  margin-top: 14px;
+  font-size: 12px;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.reveal-screen__cta {
+  margin-top: 28px;
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
