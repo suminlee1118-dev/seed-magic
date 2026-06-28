@@ -72,6 +72,15 @@ export default function IntroScreen() {
         >
           ODA가 뭔가요?
         </motion.button>
+
+        <motion.p
+          className="intro-screen__credit"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.5 }}
+          transition={{ delay: 1.4, duration: 0.6 }}
+        >
+          이수민 (농업경제학 전공)
+        </motion.p>
       </div>
     </div>
   );
