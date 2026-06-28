@@ -64,3 +64,9 @@
   color: #e7dfcd;
   padding: 8px;
 }
+
+.intro-screen__credit {
+  margin-top: 2px;
+  font-size: 11.5px;
+  color: #cfc6b4;
+}
