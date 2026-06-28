@@ -1,4 +1,4 @@
-import { useState } from "react";
+\import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate, useParams } from "react-router-dom";
 import { getSeedById, CORE_MESSAGE } from "../data/seeds";
@@ -58,9 +58,11 @@ export default function ResultScreen() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <span className="result-screen__emoji" aria-hidden="true">
-            {seed.emoji}
-          </span>
+          <div className="result-screen__grow" aria-hidden="true">
+            <span className="result-screen__emoji">{seed.emoji}</span>
+            <span className="result-screen__grow-arrow">→</span>
+            <span className="result-screen__emoji">{seed.grownEmoji}</span>
+          </div>
           <p className="result-screen__eyebrow">당신은</p>
           <h2 className="result-screen__seed-name">{seed.name}</h2>
           <p className="result-screen__ending-title">{seed.endingTitle}</p>
