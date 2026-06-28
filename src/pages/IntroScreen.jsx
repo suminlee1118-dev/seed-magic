@@ -26,7 +26,7 @@ export default function IntroScreen() {
           animate={{ opacity: 0.8 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          KOICA WeKO 8기 서포터즈 기획
+          KOICA WeKO 8기 서포터즈 기획 · 이수민 (농업경제학 전공)
         </motion.p>
 
         <motion.h1
@@ -72,15 +72,6 @@ export default function IntroScreen() {
         >
           ODA가 뭔가요?
         </motion.button>
-
-        <motion.p
-          className="intro-screen__credit"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.5 }}
-          transition={{ delay: 1.4, duration: 0.6 }}
-        >
-          이수민 (농업경제학 전공)
-        </motion.p>
       </div>
     </div>
   );
