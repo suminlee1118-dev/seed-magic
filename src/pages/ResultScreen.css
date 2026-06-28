@@ -16,10 +16,23 @@
   box-shadow: var(--shadow-card);
 }
 
-.result-screen__emoji {
-  font-size: 44px;
-  display: block;
+.result-screen__grow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   margin-bottom: 10px;
+}
+
+.result-screen__emoji {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.result-screen__grow-arrow {
+  font-size: 18px;
+  color: var(--color-ink-soft);
+  opacity: 0.5;
 }
 
 .result-screen__eyebrow {
