@@ -35,7 +35,7 @@
   letter-spacing: 0.02em;
   text-transform: none;
   line-height: 1.6;
-  max-width: 280px;
+  max-width: 100%;
 }
 
 .intro-screen__title {
