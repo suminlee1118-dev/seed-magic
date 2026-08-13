@@ -71,7 +71,7 @@ export default function ResultScreen() {
 
           <div className="result-screen__watermark">
             <span>🫘 씨앗 하나가 마을을 바꾸는 마법</span>
-            <span>이수민 (농업경제학 전공)</span>
+            <span>이수민 (충남대학교 농업경제학 전공)</span>
           </div>
         </motion.div>
 
